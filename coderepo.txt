@@ -1,0 +1,1169 @@
+##Write a program to calculate square of a given no?
+----------------------------------------
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       int s1 = 103;
+        
+        System.out.println("Square  s1 : " + (s1 * s1));
+    }
+}
+------------------------------------
+
+### Write a program to swap using third variable 
+--------------------------------------------------------------------
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the First Number s1 : ");
+        int s1 = sc.nextInt();
+         System.out.println("Enter the Secound Number s2 : ");
+         int s2 = sc.nextInt();
+         int temp= 0 ;
+         temp = s1;
+         s1= s2;
+         s2 = temp;
+          
+        System.out.println("Square  s1 : "+ s1);
+        System.out.println("Square  s1 : "+  s2);
+    }
+}
+
+----------------------------------------------------------------
+####program to swap using without third variable?
+------------------------------------------------------------------
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the First Number s1 : ");
+        int s1 = sc.nextInt();
+         System.out.println("Enter the Secound Number s2 : ");
+         int s2 = sc.nextInt();
+         
+          s1 = (s1^s2);
+          s2 = (s1^s2);
+          s1 = (s1^s2); 
+          
+        System.out.println("Square  s1 : "+ s1);
+        System.out.println("Square  s : "+  s2);
+    }
+}
+-----------------------------------------------------------------------
+## a program to calculate area of Triangle.
+------------------------------------------------------------------------
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the Base Number s1 : ");
+        float b = sc.nextFloat();
+         System.out.println("Enter the Height Number s2 : ");
+           float h = sc.nextFloat();
+         
+          float area = ( (b*h)/2);
+          
+        System.out.println("Area  : "+ area);
+    }
+
+}
+----------------------------------------------------------------
+14. Write a program to calculate average of three numbers. 
+-------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+       int a= 10;
+       int b= 20;
+       int c= 30;
+        
+       float avg = (a + b + c )/ 3;
+          
+        System.out.println("Average  : "+ avg);
+    }
+
+}
+------------------------------------------------------------------------------
+temperature conversion from Celsius to Fahrenheit  
+-----------------------------------------------------------------------------
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+       float C = 18.14f;
+        
+       float f = ((9/5)*C + 32);
+          
+        System.out.println("Fahrenheit  : "+ f);
+    }
+
+}
+-------------------------------------------------------------------------------
+temperature conversion from  Fahrenheit to  Celsius
+------------------------------------------------------------
+
+/* Online Java Compiler and Editor */
+public class HelloWorld{
+
+     public static void main(String []args){
+         
+         
+         double ferhent = 100.00; double celsies = 00.0;
+         celsies = (ferhent-32)*5/9;
+         System.out.println("Fernite :- " + celsies);
+         
+         double fernhentnew =(celsies*9)/5+32;
+       
+        System.out.println(" fernhentnew : "+fernhentnew );
+     }
+}
+-------------------------------------------------------------------------
+
+. Write a program that accepts a three digit number from user and obtain reverse of the numbe 
+   number and then calculate sum of all the digits.(without using if/ loop) 
+--------------------------------------------------------------------------------
+
+
+/* Online Java Compiler and Editor */
+import java.util.Scanner;
+public class HelloWorld{
+
+     public static void main(String []args){
+         
+         Scanner sc = new Scanner(System.in);
+        System.out.print(" Enter 3 Digit Number :- ");
+        int num = sc.nextInt();
+        
+        int s1 = num % 10 ;
+        int s2 = (num /10 ) % 10;
+        int s3 = num/100;
+        System.out.println(" Reverce :- "+ s1+ s2 + s3);
+        System.out.println(" sum :- "+ (s1+ s2 + s3));
+        
+     }
+}
+
+---------------------------------------------------------------------------
+
+. Write a program that accepts a numeric value from user  and print its corresponding charctors ?
+---------------------------------------------------------------------------------
+
+public class GFG {
+    public static void charToNumber(int num) {
+
+         int rev = 0 , r =0;
+        while (num > 0){
+            r = num % 10 ;
+            rev = (rev * 10 ) + r  ;
+            num = num/10;
+
+    }
+        System.out.println(rev);
+        while (r > 0 ) {
+
+            r = rev %10 ;
+
+            switch (r)
+        {
+        case 1:
+            System.out.print("one ");
+            break;
+        case 2:
+            System.out.print("two ");
+            break;
+        case 3:
+            System.out.print("three ");
+            break;
+        case 4:
+            System.out.print("four ");
+            break;
+        case 5:
+            System.out.print("five ");
+            break;
+        case 6:
+            System.out.print("six ");
+            break;
+        case 7:
+            System.out.print("seven ");
+            break;
+        case 8:
+            System.out.print("eight ");
+            break;
+        case 9:
+            System.out.print("nine ");
+            break;
+        case 0:
+            System.out.print("zero ");
+            break;
+        default:
+            System.out.print("InValid ");
+            break;
+        }
+ 
+           rev = rev / 10;
+           }
+        }
+
+
+
+    public static void main(String[] args) {
+        int num = 12345;
+        charToNumber(num);
+    }
+}
+
+--------------------------------------------------------------
+##  Armstrong or not 
+--------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class Armostream {
+    public static void main(String[] args)  {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter number : ");
+        int num =sc.nextInt();
+
+        int temp = 0 ;
+          temp = num ;
+        int p = 0 ;
+
+        while (num > 0){
+            int rem = num % 10;
+            p = p + (rem * rem * rem );
+            num = num /10 ;
+       
+    }
+    if(temp == p ){
+        System.out.println("Armstrong Number");
+    } else {
+        System.out.println("Not an armstrong number ");
+    }
+    }
+}
+
+-------------------------------------------------------------------------
+
+three digit number from user and find the maximum number ?
+
+--------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class Maximum {
+    
+  
+    public static void main(String[] args) {
+         
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number : ");        
+       
+        int a, b, c ;
+            int num = sc.nextInt();
+        a = num / 100 ;
+        b = ( num / 10)% 10 ;
+        c=num % 10 ;
+
+        if(a > b){
+            if(a> c) {
+                System.out.println("\n" + "Maximum is:  "+ a );
+            }
+        } if ( b> a ){
+            if(b>c ) {
+                System.out.println("\n"+ "Maximum is:  " + b );
+        }
+            } else {
+                System.out.println("\n"+ "Maximum is:  "+ c );
+            }
+}
+}
+-------------------------------------------------------------------------------
+
+
+. Write a program which accepts days(eg. 670 days) as integer
+   and display total number of years, months and days in it.
+------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Years {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number of Days :  ");
+        int days=sc.nextInt();
+ 
+        int years=(days/365);
+         System.out.println("Years of number "+ years);
+
+
+         int reminingDay = days - 365*years;
+         int month = reminingDay/30;
+         System.out.println("Moth :  - "+ month);
+         
+         int d = reminingDay - 30*month;
+         System.out.println(" Days :- "+ d);
+
+
+
+
+    }
+}
+
+--------------------------------------------------------------
+       Program to reverse a given number. 
+-------------------------------------------------------------
+
+public class Reverse {
+    public static void main(String[] args) {
+        
+        int num = 356;
+        int rev =0; int r=0;
+
+        while(num > 0){
+
+            rev = ( rev* 10)+ num  % 10 ;
+            num = num / 10;
+                        
+        }
+        System.out.println("Reverse of the number is: "+rev);
+    }
+}
+
+-------------------------------------------------------------
+
+. In a company an employee is paid as under:
+If his basic salary is less than Rs. 1500, then HRA = 10% of basic salary
+and DA = 90% of basic salary.
+If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500
+and DA = 98% of basic salary.
+If the employee's salary is input by the user write a program to find his gross salary.
+GS=Basic+DA+HRA
+
+----------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class GrossSalary {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter  basic salary : - ");
+        double bs = sc.nextInt();
+
+        double Hra, DA , Gross;
+        if(bs < 1500){
+              Hra = bs * 10 /100 ;
+             DA = bs * 90 /100 ;
+        } else {
+            Hra = 500;
+            DA = bs * 98 / 100;
+        }
+
+        Gross = bs + Hra + DA ;
+        System.out.println(Gross);
+    }
+}
+
+-----------------------------------------------------------
+
+program to check that entered year is leap year or not in java
+
+------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class LeapYear {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in );
+        System.out.print("Enter a year: ");
+
+        int year = sc.nextInt();
+
+        if(year % 4 == 0){
+            System.out.println("it is  leap year "+ year);
+        }else if (year % 400 == 0){
+            System.out.println("It's  a leap year " + year);
+        } else {
+            System.out.println("not a  leap year "+ year);
+        }
+    }
+}
+
+-------------------------------------------------------------------------
+
+
+21. Program to check whether number is prime or not
+----------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+
+    public static void isPrimeNumber(int num) {
+        if (num <=1){
+            System.out.println("Number is not prime :- ");
+           
+        }
+        for ( int i=2; i<= Math.sqrt(num); i++){
+            if (num % i == 0 ){
+                System.out.println(" Not Prime Number : "+ num);
+                break;
+            } else {
+                System.out.println(" Prime Number : "+ num);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The number : ");
+
+        int num=sc.nextInt();
+
+        isPrimeNumber(num);
+
+    }
+    }
+
+-------------------------------------------------------------------------------
+
+5. Program to show sum and average of 10 element array. Accept array elements from
+    user.
+---------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class ArraySumAndAVG {
+    public static void main(String[] args) {    
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Arrays Size : ");
+        int n=sc.nextInt();
+        int array[]  = new int[n];
+
+        System.out.println("Enter Array value");
+         int sum =0 ; double avrg = 0;
+
+
+        for(int i=0; i<array.length; i++ ){
+        array[i] = sc.nextInt();
+        sum = sum + array[i];
+        }
+         avrg = sum / array.length;
+        System.out.println("Sum of Array : "+ sum );
+        System.out.println("Average of Array : "+  avrg);
+}
+}
+
+---------------------------------------------------------------------------
+. Sort a ten element array in descending order. 
+------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class Sort {
+    public static void main(String[] args) throws Exception{
+
+         int temp= 0;
+         int[] arr = new int[]{2,6,8,3,4,9,4,5,7,0};
+        for (int i = 0; i < arr.length; i++) {     
+            for (int j = i+1; j < arr.length; j++) {     
+               if(arr[i] < arr[j]) {    
+                    temp = arr[i];    
+                   arr[i] = arr[j];    
+                   arr[j] = temp;    
+               }     
+            }     
+        }    
+        System.out.println ();
+
+        for(int i=0; i<arr.length;i++){
+            System.out.print (arr[i]+ "  ");
+        }
+    }
+
+}
+--------------------------------------------------------------------
+
+0. Create a class to calculate Area of circle with one data member to store the radius and
+another to store area value.
+Create method members
+ 1. init - to input radius = 51.12
+ 2. calc - to calculate area
+ 3. display- to display area 
+---------------------------------------------------------------------
+
+public class Area {
+    public static void main(String[] args) throws Exception{
+        double redis = 51.12;
+        double pi = 3.14;
+        double area;
+        if (redis > 0){
+            area = pi * redis * redis;
+            System.out.println("The circle's radius is " + area);
+
+        }
+    }
+
+
+}--------------------------------------------------------
+
+. Create a class MathOperation with two data member X and Y to store the operand and
+third data member R to store result of operation.
+Create method members
+ init - to input X and Y from user
+ add - to add X and Y and store in R
+ multiply - to multiply X and Y and store in R
+ power - to calculate X Y
+and store in R
+ display- to display Result R
+
+--------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class MaqthOperation {
+    public static void main(String[] args) throws Exception{
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the X number: ");
+        int x = sc.nextInt();
+         System.out.print("Enter the y number: ");
+        int y = sc.nextInt();
+
+         System.out.print(" Addition " +  ( x+y ));
+         System.out.println("\n Multiply "+   (x*y));
+         System.out.println("\n Power "+   Math.pow(x, y));
+
+    }
+
+
+}
+
+-------------------------------------------------------------------------
+
+2. Calculate series : 1^2+2^2+3^2+4^2+.........+n^2
+---------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class PowerNumber {
+
+    public static void main(String[] args) {
+        
+    
+    int p;
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print(" Enter number : ");
+
+    int num = sc.nextInt();
+
+    for (int i=0; i <= num; i++){
+
+        p = (int) ( Math.pow(i, 2));
+        System.out.println("Power of " + i + " is: "+p );
+    }
+
+}
+}
+
+
+---------------------------------------------------------------------------
+
+Calculate sum of Lucas series (up to 10 terms) :
+1, 2, 3, 6, 11, 20 ,........
+
+---------------------------------------------------------------------------
+
+public class SumNumber {
+    public static void main(String[] args) {
+        
+        int a = 10;
+
+        int sum =0 ;
+        for(int i=1; i<=10; i++){
+            sum = sum + i ;
+            System.out.print( sum + ", ");
+        }
+    }
+}
+
+---------------------------------------------------------------------------
+ Print all prime numbers between two given numbers
+
+---------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class TwoNumPrime {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number : ");
+        int f = sc.nextInt();
+        System.out.print("Enter the second number : ");
+        int s=sc.nextInt();
+  
+          int flage = 0 ;
+        for (int i = f; i <= s; i++){
+            
+            if(i <=1)
+            continue;
+
+            flage = 1;
+ 
+            for(int j=2; j<= s/2; ++j){
+               if(i % j == 0){
+                   flage = 0;
+                    break;
+                }  
+            }
+
+            if(flage == 1 ){
+                System.out.println( i + " ");
+            }
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------
+Program to print transpose of a matrix.
+---------------------------------------------------------------------------
+
+public class Transpose {
+
+    static int N = 4;
+     private static void transpose(int[][] A, int[][] B) {
+        for(int i=0; i<N ; i++){
+            for (int j=0; j< N; j++){
+                B[i][j]= A[j][i];
+            }
+        }
+    }
+
+    
+    public static void main(String[] args) {
+        
+        int A[][] = { {1,1,1,1},
+                      {2,2,2,2},
+                      {3,3,3,3},
+                      {4,4,4,4} };
+
+        int B[][] = new int[N][N],i,j;
+
+        transpose(A,B);
+        for ( i=0; i<N; i++){
+            for ( j=0; j<N; j++){
+                System.out.print(B[i][j] + " ");
+               
+            }
+             System.out.print("\n");
+
+        }
+    }
+   
+}
+
+
+---------------------------------------------------------------------------
+##   Create a class Person with properties (name and age) with following features.
+a. Default age of person should be 18;
+b. A person object can be initialized with name and age;
+c. Method to display name and age of person
+---------------------------------------------------------------------------
+
+ class PersonInfo {
+ 
+    public static String name;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        PersonInfo.name = name;
+    }
+
+    public int age;
+    public int setAge(int age){
+        if(age <= 0 ){
+        System.out.println("Default AGE is 18");
+         age = 18;
+        }
+     
+        return this.age=age;
+    }
+    
+    public int getAge (){
+        return this.age=age;
+    }
+
+}
+public class Person{
+
+   
+    public static void main(String[] args) {
+        
+        PersonInfo p = new PersonInfo();
+        p.setName(" ram");
+        p.setAge(0);
+
+        // PersonInfo p1 = new PersonInfo();
+        // p1.setName("Rajudi");
+        // p1.setAge(-23);
+
+        //  PersonInfo p2 = new PersonInfo();
+        // p2.setName("Raju");
+        // p2.setAge(0);
+
+        System.out.println("ramu call " + p.getName() + " " + p.getAge());
+        
+        // System.out.println("rajudi call "+p1.getName() + " " + p1.getAge());
+        //  System.out.println("raju call "+p2.getName() + " " + p2.getAge());
+    }
+}
+
+--------------------------------------------------------------------------------------------
+
+
+. Create a class Employee with(empNo ,salary and totalSalary) ) with following features.
+a. Only parameterized constructor;
+b. totalSalary always represent total of all the salaries of all employees created.
+c. empNo should be auto incremented.
+d. display total employees and totalSalary using class method.
+
+
+--------------------------------------------------------------------------------------------
+
+  class EmployeeDtls1  {
+
+    private   int empNo;
+    private  double salary;
+
+     private static int empCount = 0;
+    private static double totalSalary = 0.0;
+
+    public EmployeeDtls1(double d) {
+    }
+
+    public  void Employee(double salary){
+        empNo = ++empCount;
+        this.salary = salary;
+        totalSalary += salary; 
+    }
+
+    public int getEmpNo (){
+        return this.empNo = empNo;
+    }
+    public double getSalary (){
+        return this.salary= salary;
+    }
+    public static void display (){
+        System.out.println("Employee number : - "+ empCount);
+        System.out.println("Employee total salary : "+ totalSalary);
+    }
+
+ } 
+
+
+public class EmployeeDtls {
+    public static void main (String args[]){
+
+        EmployeeDtls1 e1 = new EmployeeDtls1(2500.50);
+        EmployeeDtls1 e2 = new EmployeeDtls1(3000.00);
+
+        EmployeeDtls1.display();
+
+        System.out.println(e1.getEmpNo());
+
+}
+-
+
+
+
+---------------------------------------------------------------------------------------
+
+6. Create class Product (pid, price, quantity) with parameterized constructor.
+Create a main function in different class (say XYZ) and perform following task:
+a. Accept five product information from user and store in an array
+b. Find Pid of product with highest price.
+c. Create method (with array of product’s object as argument) in XYZ class to
+calculate and return total amount spent on all products. (amount spent on
+single product=price of product * quantity of product)
+
+
+----------------------------------------------------------------------------------------
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class Product {
+      static int pid;
+      static double price;
+      static int quantity;
+
+
+    public static int getPid() {
+        return pid;
+    }
+    public static void setPid(int pid) {
+        Product.pid = pid;
+    }
+    public static double getPrice() {
+        return price;
+    }
+    public static void setPrice(double price) {
+        Product.price = price;
+    }
+    public static int getQuantity() {
+        return quantity;
+    }
+    public static void setQuantity(int quantity) {
+        Product.quantity = quantity;
+    }
+
+    Product (int pid, double price, int quantity){
+        this. pid = pid ;
+        this. price= price  ;
+        this. quantity = quantity   ;
+
+    }
+     
+    public void display(){
+        System.out.print("\nProduct : " + pid + " "+ price + " " + quantity);
+    }
+    
+
+    @Override
+    public String toString() {
+        return "Product []";
+    }
+     
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        
+        // // Scanner sc = new Scanner(System.in);
+ 
+        // System.out.println("Enter Array size : ");
+        // // int size = sc.nextInt();
+        Product[] product = new Product [5];
+
+       // int[] arr = new int[product];
+
+        
+         product[0] = new Product(101, 1200, 100);
+        product [1] = new Product(102, 1300, 200);
+        product [2] = new Product(103,1300,300);
+        product [3] = new Product(104, 1400, 400);
+        product [4] = new Product(105, 1500, 500);
+         
+          
+        for (int i = 0; i < 5; i++ ){
+
+            product[i].display();
+            
+        }
+
+         
+
+         
+}
+}
+
+----------------------------------------------------------------------
+
+Make list of Students having name, roll no., age, score. Write a program to accept 10
+students record and arrange the Students based on the score group [0-50],[50-65],[65-
+80],[80-100].
+---------------------------------------------------------------------------
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class Product {
+      static int pid;
+      static double price;
+      static int quantity;
+
+
+    public static int getPid() {
+        return pid;
+    }
+    public static void setPid(int pid) {
+        Product.pid = pid;
+    }
+    public static double getPrice() {
+        return price;
+    }
+    public static void setPrice(double price) {
+        Product.price = price;
+    }
+    public static int getQuantity() {
+        return quantity;
+    }
+    public static void setQuantity(int quantity) {
+        Product.quantity = quantity;
+    }
+
+    Product (int pid, double price, int quantity){
+        this. pid = pid ;
+        this. price= price  ;
+        this. quantity = quantity   ;
+
+    }
+     
+    public void display(){
+        System.out.print("\nProduct : " + pid + " "+ price + " " + quantity);
+    }
+    
+
+    @Override
+    public String toString() {
+        return "Product []";
+    }
+     
+    
+    public static void main(String[] args) {
+        
+        // // Scanner sc = new Scanner(System.in);
+ 
+        // System.out.println("Enter Array size : ");
+        // // int size = sc.nextInt();
+        Product[] product = new Product [5];
+
+        
+       // int[] arr = new int[product];
+
+        
+         product[0] = new Product(101, 1200, 100);
+        product [1] = new Product(102, 1300, 200);
+        product [2] = new Product(103,1300,300);
+        product [3] = new Product(104, 1400, 400);
+        product [4] = new Product(105, 1500, 500);
+         
+          
+        for (int i = 0; i < 5; i++ ){
+
+            product[i].display();
+            
+        }
+
+         
+
+         
+}
+}
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+Create class OneBHK with instance variable roomArea , hallArea and price
+a. Create default and parameterized constructor;
+b. Method show(): to print OneBHK data member information;
+Create another class TwoBHK which has all the properties and behaviour of OneBHK
+and a new instance variable room2Area.
+a. Create default and parameterized constructor;
+b. Method show(): to print all data member information
+
+---------------------------------------------------------------------------
+
+  class OneBHK {
+    
+    double area;
+
+    double roomArea = 100.00;
+    double hallArea = 50.00;
+    double price = 5000;
+  
+public OneBHK() {
+
+    }
+ 
+public OneBHK(double area, double roomArea, double hallArea,double price) {
+        this.area = area;
+        this.roomArea = roomArea;
+        this.hallArea = hallArea;
+        this.price=price;
+    }
+ 
+public void show(){
+    System.out.println("One Bhk House");
+    System.out.printf("%-23s%8d\n", "Room Area" + roomArea);
+    System.out.printf("%-23s%8d\n","Hall Area" + hallArea);
+    System.out.println(" OneBhk price "+ price );
+}
+
+public static int getPrice() {
+    return 5000;
+}
+ 
+} 
+ class TwoBHK extends OneBHK{
+    
+    double area;
+    double roomArea = 200.00;
+    double hallArea = 100.00;
+    double price = 5000;
+ 
+
+public TwoBHK() {
+    }
+ 
+public TwoBHK(double area, double roomArea, double hallArea,double price) {
+        this.area = area;
+        this.roomArea = roomArea;
+        this.hallArea = hallArea;
+        this.price=price;
+    }
+ 
+public void show(){
+    System.out.println("TwoBHK   House");
+    System.out.println ( "TwoBHK Room Area" + roomArea);
+    System.out.println(" TwoBHK Hall Area" + hallArea);
+    System.out.println(" TwoBHK price "+ price );
+}
+ 
+}
+public class BHK  {
+         
+    public static void main (String[] args){
+
+
+        TwoBHK t = new TwoBHK();
+        OneBHK o = new OneBHK();
+        System.out.println( " total price " + (OneBHK.getPrice() + TwoBHK.getPrice()));
+        
+        t.show();
+    }
+
+}
+------------------------------------------------------------------------------------
+
+.Create three classes
+Faculty (facultyid, salary)
+FullTimeFaculty (basic, allowance) inherits class Faculty
+PartTimeFaculty (hour, rate) inherits class Faculty
+Create a method for accepting input in FullTimeFaculty and PartTimeFaculty, but
+salary should not be accepted. Salary is calculated on the basis of (basic+allowance) for
+FullTimeFaculty and (hour*rate) for PartTimeFaculty. Also create method in above classes
+to display faculty data.
+Create another class(say XYZ) for main method and store 2 fulltime and 2 parttime
+faculty information. Also print their details.
+
+
+
+------------------------------------------------------------------------------------
+package Facalty;
+
+public class Facalty {
+    
+    int facaltyId;
+     double salary;
+
+    public int getFacaltyId() {
+        return facaltyId;
+    }
+    public void setFacaltyId(int facaltyId) {
+        facaltyId = facaltyId;
+    }
+    public double getSalary() {
+        return salary;
+    }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+    @Override
+    public String toString() {
+        return "Facalty [FacaltyId=" + facaltyId + ", salary=" + salary + "]";
+    }
+   
+}
+----------------
+----------------
+
+package Facalty;
+
+public class Fulltime extends Facalty {
+    
+    double basic;
+    double allowance;
+    public Object display;
+
+Fulltime(int facaltyId, double basic, double allowance){
+    this.facaltyId=facaltyId;
+    this.salary = basic + allowance;
+}
+public void display(){
+    System.out.println("Facalty id " + facaltyId);
+    System.out.println("Salary is "+ salary);
+}
+}
+
+-------------
+
+
+package Facalty;
+
+public class Parttime extends Facalty{
+    
+    int hour;
+    double rate;
+
+Parttime(int facaltyId, int hour, double rate){
+
+    this.facaltyId=facaltyId;
+    this.salary = hour * rate;
+
+}   
+void display(){
+    System.out.println(" Facalty id" + facaltyId);
+    System.out.println("Hourly Rate: "+ salary);
+} 
+}
+----------------------------------------
+
+package Facalty;
+
+public class FacalatyDtls {
+     
+    public static void main(String[] args) {
+        
+        Fulltime f1 = new Fulltime(101,1000, 500);
+        Fulltime f2 = new Fulltime(102,2000, 1000);
+
+        Parttime p1 = new Parttime(201,10, 5);
+        Parttime p2 = new Parttime(202,30, 5 );
+
+        p1.display();
+        p2.display();
+
+        f1.display();
+        f2.display();
+    }
+}
+---------------------------------------------------------------
+
+
+
